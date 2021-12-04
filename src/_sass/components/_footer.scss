@@ -28,12 +28,12 @@
       font-size: $footer-text-size;
       margin: 0 0.5em 0 0.05em;
       display: inline;
-      font-family: $font-serif;
+      font-family: $font-serif-body;
     }
   }
   .footer_copyright {
     margin: 0;
-    font-size: 12px;
+    font-size: 18px;
   }
   .footer_btn {
     @include simple_link_style;

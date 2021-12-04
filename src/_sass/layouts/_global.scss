@@ -8,6 +8,7 @@
   background-color: $color-bg;
   background-image: $image-background;
 }
+
 .container {
   top: 2%;
   height: 97%;
@@ -18,10 +19,11 @@
   margin: 0 auto;
   box-sizing: border-box; // interior border
   background-color: rgba($color-postbg, 0.72);
+
 }
 .div_article {
   top: $header-height + 1px;
-  height: 95%;
+  height: 92%;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -33,7 +35,7 @@
     margin: 0;
     padding: 10px 19px 19px 19px;
     text-align: left !important;
-    min-height: 88%; 
+    min-height: 90%; 
   }
   td {
     border: $thin-border;  

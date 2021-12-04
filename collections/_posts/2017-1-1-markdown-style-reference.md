@@ -9,8 +9,8 @@ publish: true
 home_btn: true
 btn_text: true
 footer: true
-maximize: true
-encrypted_text: true
+maximize: false
+encrypted_text: false
 toc_level: 4
 category: Sample
 date: 2019-5-25
