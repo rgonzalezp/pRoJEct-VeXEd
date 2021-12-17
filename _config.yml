@@ -1,6 +1,6 @@
 # 1. Site Settings
 url                : "https://rgonzalezp.github.io"
-baseurl            : "/"
+baseurl            : ""
 permalink           : /:title/
 description         : "Ricardo Gonzalez personal homepage"
 markdown            : kramdown
@@ -12,11 +12,15 @@ bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]
 # Keep it null if you want to show items in alphabetic order.
 collection_order    : 
   [
+    "research",
     "posts",
     "my_notes",
     "projects",
+    
   ]
 collections:
+  research:
+    output          : true
   projects:
     output          : true
     permalink       : /:collection/:title/

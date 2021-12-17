@@ -1,28 +1,4 @@
 <div class="post_info">
-  <!-- author -->
-  {% if page.author %}
-  <span>
-    {{ page.author }}
-  </span>
-  {% endif %}
-  <!-- date -->
-  {% if page.show_date %}
-  <span>
-    <i class="fa fa-calendar"></i>
-    {{ page.date | date: "%b %d, %Y" }}
-  </span>
-  {% endif %}
-  <!-- category -->
-  {% if page.category %}
-  <span>
-    <i class="fa fa-archive"></i>
-    {{ page.category }}
-  </span>
-  {% endif %}
+  
+
 </div>
-<!-- abstract -->
-{% if page.abstract %}
-<div class="abstract">
-  <p>{{ page.abstract }}</p>
-</div>
-{% endif %}

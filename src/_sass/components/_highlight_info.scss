@@ -39,6 +39,20 @@
 
   }
 
+  .image-highlight{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    padding-left: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
 @media screen and (max-width: 900px) {
   .title-highlight{
 
@@ -92,6 +106,13 @@
       margin-bottom: 0px;
       font-size: 16px;
     }
+    .image-highlight{
+      padding:0;
+    }
+    .col-sm-5{
+      min-height: 100px!important;
+    }
+
 
 }
   

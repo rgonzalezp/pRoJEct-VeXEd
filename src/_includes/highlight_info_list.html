@@ -1,47 +1,41 @@
-{% for highlight in site.highlights %}
+{% for highlight in site.highlights reversed %}
 <div class="highlight_info">
-<div class="row">
-    <div class="col-sm-4">
-        <!-- image -->
-      {% if highlight.image %}
-      <span>
-        <img class="image-highlight" src={{site.url}}{{site.baseurl}}{{highlight.image}}/>
-      </span>
-      {% endif %}
-    </div>
-    <div class="col-sm-8">
-    <!-- title -->
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- title -->
     {% if highlight.title %}
     <div>
-      <p class="title-highlight" >{{ highlight.title }}.{% if highlight.date %}
-
-         {{ highlight.date | date: "%b %d, %Y" }}
-  
-  {% endif %}</p> 
+      <p class="title-highlight" >{{ highlight.title }}.
+        <!-- date -->
+        {% if highlight.date %}
+        «{{ highlight.date | date: "%b %d, %Y" }}
+        {% endif %}
+         <!-- conference -->
+        {% if highlight.conference %}
+          {{ highlight.conference }}»
+        {% endif %}</p> 
+    </div>
+    {% endif %}
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-5">
+        <!-- image -->
+      {% if highlight.image %}
       
-    </div>
-    {% endif %}
-    
-    <!-- authors -->
-    {% if highlight.authors %}
-    <div >
-      <p class="authors-highlight">{{ highlight.authors }}</p>
-    </div>
-    {% endif %}
-    <!-- conference -->
-    {% if highlight.conference %}
-    <div >
-      <p class="conference-highlight" >{{ highlight.conference }}</p>
-    </div>
-    {% endif %}
+        <img class="image-highlight" src={{site.url}}{{site.baseurl}}{{highlight.image}}/>
+  
+      {% endif %}
+  </div>
+  <div class="col-sm-7">
     <!-- short_desc -->
     {% if highlight.short_desc %}
     <div >
       <p class="short-desc-highlight" >{{ highlight.short_desc }}</p>
     </div>
     {% endif %}
-    </div>
-</div>
+  </div>
+  </div>
 </div>
 <div class="separator-zone-1 anythingelse"></div>
 {% endfor %}
